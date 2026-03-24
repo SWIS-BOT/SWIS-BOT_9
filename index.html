@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SWIS BOT 9 🤖</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            font-family: Arial;
+            color: white;
+            text-align: center;
+        }
+
+        h1 { font-size: 80px; }
+
+        p { margin-bottom: 40px; }
+
+        .btn {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .next { background: #22c55e; }
+        .prev { background: #3b82f6; }
+
+        .bottom-left { position: fixed; bottom: 20px; left: 20px; }
+        .bottom-right { position: fixed; bottom: 20px; right: 20px; }
+    </style>
+</head>
+
+<body>
+
+<h1>🤖 SWIS BOT 9</h1>
+<p>Developed by St. Willibrord Students 🚀</p>
+<p>If the bot stops replying, click Next Bot →</p>
+
+<!-- Navigation -->
+<div class="bottom-left">
+    <a href="https://swis-bot.github.io/SWIS-BOT_8/">
+        <button class="btn prev">← Previous</button>
+    </a>
+</div>
+
+<div class="bottom-right">
+    <a href="https://swis-bot.github.io/SWIS-BOT_10/">
+        <button class="btn next">Next →</button>
+    </a>
+</div>
+
+<!-- Chatbase -->
+<script>
+(function(){
+if(!window.chatbase || window.chatbase("getState") !== "initialized"){
+window.chatbase=(...a)=>{(window.chatbase.q=window.chatbase.q||[]).push(a)};
+}
+const s=document.createElement("script");
+s.src="https://www.chatbase.co/embed.min.js";
+s.id="PUT_BOT_9_ID_HERE";
+document.body.appendChild(s);
+})();
+</script>
+
+</body>
+</html>
